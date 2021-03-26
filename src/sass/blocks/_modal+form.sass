@@ -1,0 +1,91 @@
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: rgba($color: #000000, $alpha: .5)
+	z-index: 333
+
+.modal
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 380px
+	min-height: 300px
+	background-color: $third-color
+	padding: 30px
+	border: 10px solid $main-color
+	&__close
+		position: absolute
+		top: -14px
+		right: -40px
+		font-size: 50px
+		line-height: 26px
+		color: $second-color
+		cursor: pointer
+
+	&__title
+		text-align: center
+		font-size: 21px
+		color: white
+
+	&__subtitle
+		// margin-top: 0px
+		text-align: center
+		font-size: 21px
+		color: white
+
+	&_mini
+		min-height: 150px
+		// .title
+		// 	font-size: 25px
+
+		.modal__subtitle
+			margin-top: 20px
+			line-height: 26px
+		// 	text-align: center
+		// 	font-size: 21px
+		// 	color: yellow
+
+	.error
+		border: 1px solid red
+
+	label.error
+		border: none
+		text-align: center
+		margin-top: 5px
+		color: $second-color
+		margin-bottom: 0px
+
+.form
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	width: 300px
+	input
+		height: 45px
+		border-radius: 5px
+		margin: 15px 0 0
+		border: none
+		padding: 0 20px
+		outline: none
+
+	.btn_submit
+		padding: 15px 25px
+		margin-top: 20px
+		box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.18)
+		border-color: rgba(0, 0, 0, 0.23)
+		border-radius: 4px
+		background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%)
+		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22)
+		color: #ffffff
+		outline: none
+		cursor: pointer
+
+#modal, #thanks
+	display: none
+
+// #thanks
+// 	display: block
