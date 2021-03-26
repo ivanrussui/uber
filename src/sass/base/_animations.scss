@@ -1,0 +1,93 @@
+@keyframes slidein {
+  0% {
+		margin-left: 0%;
+		width: 100%;
+	}
+  100% {
+		margin-left: 100%;
+		width: 300%
+	}
+}
+
+// @keyframes reasons {
+// 	from {
+// 		transform: scale(1);
+// 	}
+// 	50% {
+// 		transform: scale(1.2);
+// 	}
+// 	to {
+// 		transform: scale(1);
+// 	}
+// }
+@keyframes reasons {
+	from {
+		transform: scaleX(0);
+	}
+	50% {
+		transform: scaleX(1);
+	}
+	to {
+		transform: scaleX(0);
+	}
+}
+
+@keyframes label {
+	from {
+		transform: rotate(0);
+	}
+	50% {
+		transform: rotate(5deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+@keyframes labelW {
+	from {
+		transform: rotate(0);
+	}
+	50% {
+		transform: rotate(-5deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes car {
+	from {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+// @keyframes carRun {
+//   0% {
+// 		padding-left: -100%;
+// 		// width: 100%;
+// 	}
+//   30% {
+// 		padding-left: 0%;
+// 		// width: 300%
+// 	}
+//   50% {
+// 		padding: 0%;
+// 		// width: 300%
+// 	}
+//   80% {
+// 		padding-right: 0%;
+// 		// width: 100%
+// 	}
+//   100% {
+// 		padding-right: 100%;
+// 		// width: 100%
+// 	}
+// }
+
+

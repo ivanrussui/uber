@@ -8,8 +8,8 @@
 		&_header
 			font-size: 50px
 	.reasons
-		&_block
-			align-items: flex-start
+		// &_block
+		// 	align-items: flex-start
 		&_descr
 			width: 300px
 	.mobile
@@ -122,7 +122,7 @@
 				color: #070716
 			&_sub a:hover
 				color: #999
-			&_lang:hover 
+			&_lang:hover
 				color: #1fbad6
 	.mobile_item_plus:hover
 		&::before, &::after
@@ -137,7 +137,6 @@
 			&:hover
 				color: #000
 				transition: none
-	
 
 @media (max-width: 767px)
 	// *:hover
@@ -206,6 +205,9 @@
 	.promo
 		&_header
 			line-height: 45px
+			animation: none
+		&_subheader
+			animation: none
 	.reasons
 		padding: 40px 0
 		&_descr
@@ -395,6 +397,26 @@
 			margin-top: 16.5px
 		&_mobile
 			margin-top: 19px
+	.modal
+		padding: 14px
+		max-width: 100%
+		input
+			// padding: 0;
+			max-width: 100%
+
+		.btn
+			// min-width: 200px;
+			max-width: 100%
+			padding: 10px 15px
+
+		&__close
+			top: 2px
+			right: 0
+			line-height: 23px
+
+	.form
+		width: 100%
+
 	// .label
 	// 	&:hover
 	// 		color: #fff

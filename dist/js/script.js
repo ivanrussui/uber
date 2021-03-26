@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function () {
   // modal
   $('[data-name=modal]').on('click', function () {
-    $('.overlay, #modal').show('slow');
+    $('.overlay, #modal').fadeIn('slow');
     $('body').toggleClass('lock'); // добавляем класс блокирующий прокрутку
   });
 
@@ -75,7 +75,7 @@ $(document).ready(function () {
     }).done(function () {
       $(this).find('input').val('');
       $('#modal').hide(500);
-      $('#thanks').show(500);
+      $('#thanks').fadeIn(500);
 
       $('form').trigger('reset');
     });

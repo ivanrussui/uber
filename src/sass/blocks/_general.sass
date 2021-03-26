@@ -98,6 +98,7 @@ nav
 		font-size: 60px
 		line-height: 60px
 		margin: 0
+		animation: 1.5s ease-in 0.2s 1 reverse both running slidein
 	&_subheader
 		color: #ffffff
 		font-weight: 700
@@ -107,6 +108,7 @@ nav
 		line-height: 36px
 		margin: 0
 		margin-top: 22px
+		animation: 1.5s ease-in 0.2s 1 reverse both running slidein
 	&_descr
 		color: #ffffff
 		font-size: 18px
@@ -149,11 +151,13 @@ nav
 	z-index: 2
 	&:hover
 		@include label_hover
+		animation: label 1s 1
 	&_white
 		background-color: #ffffff
 		color: #070716
 		&:hover
 			@include label_hover_w
+			animation: labelW 1s 1
 	&_min
 		width: 76px
 
@@ -188,8 +192,10 @@ nav
 	&_block
 		display: flex
 		margin-top: 40px
-		align-items: center
+		align-items: flex-start
 		justify-content: center
+
+
 	&_round
 		display: flex
 		justify-content: center
@@ -199,6 +205,8 @@ nav
 		background-color: $main-color
 		border-radius: 100%
 		margin-right: 26px
+		img
+			animation: reasons 2s infinite
 	&_descr
 		width: 341px
 	&_subtitle
@@ -278,8 +286,10 @@ nav
 				background-color: $main-color
 				transition: 0.3s all
 			&:hover
+				
 				&::before, &::after
 					background-color: $second-color
+					animation: reasons 1.5s 3
 
 .choice
 	position: relative
@@ -291,6 +301,7 @@ nav
 		display: block
 		margin: 56px auto 0
 		z-index: 2
+		animation: car 3s infinite
 	&_descr
 		text-align: center
 		color: $third-color
@@ -454,3 +465,6 @@ nav
 
 .xs-visible
 	display: none
+
+// .reasons_block > .reasons_round > img
+// 	animation: skill 2s infinite
