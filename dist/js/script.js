@@ -85,4 +85,20 @@ $(document).ready(function () {
   $('.modal__close').on('click', function () {
     $('.overlay, #thanks').hide(500);
   });
+
+  // кнопка наверх
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 700) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  // плавность перехода по всем ссылкам на сайте
+  $("a[href^='#']").click(function () {
+    const _href = $(this).attr('href');
+    $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
+    return false;
+  });
 });
