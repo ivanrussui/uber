@@ -22,6 +22,7 @@ $(document).ready(function () {
   // modal
   $('[data-name=modal]').on('click', function () {
     $('.overlay, #modal').fadeIn('slow');
+		// $('.menu_link').scroll('top: 500px');
     $('body').toggleClass('lock'); // добавляем класс блокирующий прокрутку
   });
 
@@ -89,9 +90,9 @@ $(document).ready(function () {
   // кнопка наверх
   $(window).scroll(function () {
     if ($(this).scrollTop() > 700) {
-      $('.pageup').fadeIn();
+      $('.pageup').slideDown();
     } else {
-      $('.pageup').fadeOut();
+      $('.pageup').slideUp();
     }
   });
 
