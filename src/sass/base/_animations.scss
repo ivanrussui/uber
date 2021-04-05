@@ -9,17 +9,6 @@
 	}
 }
 
-// @keyframes reasons {
-// 	from {
-// 		transform: scale(1);
-// 	}
-// 	50% {
-// 		transform: scale(1.2);
-// 	}
-// 	to {
-// 		transform: scale(1);
-// 	}
-// }
 @keyframes reasons {
 	from {
 		transform: scaleX(0);
@@ -43,6 +32,7 @@
 		transform: rotate(0deg);
 	}
 }
+
 @keyframes labelW {
 	from {
 		transform: rotate(0);
@@ -66,28 +56,3 @@
 		transform: scale(1);
 	}
 }
-
-// @keyframes carRun {
-//   0% {
-// 		padding-left: -100%;
-// 		// width: 100%;
-// 	}
-//   30% {
-// 		padding-left: 0%;
-// 		// width: 300%
-// 	}
-//   50% {
-// 		padding: 0%;
-// 		// width: 300%
-// 	}
-//   80% {
-// 		padding-right: 0%;
-// 		// width: 100%
-// 	}
-//   100% {
-// 		padding-right: 100%;
-// 		// width: 100%
-// 	}
-// }
-
-

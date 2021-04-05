@@ -22,7 +22,6 @@ $(document).ready(function () {
   // modal
   $('[data-name=modal]').on('click', function () {
     $('.overlay, #modal').fadeIn('slow');
-		// $('.menu_link').scroll('top: 500px');
     $('body').toggleClass('lock'); // добавляем класс блокирующий прокрутку
   });
 
